@@ -39,18 +39,38 @@ Execute multiple_processes.py.
 Read the output. Read the code. 
 Try to figure out what's going on. 
 
-1. What libraries did we import?
-1. Where do we set the TASK_DURATION_SECONDS?
-1. How many functions are defined? 
-1. What are the function names? 
-1. In general, what does each function do? 
-1. Where does the execution begin? Hint: generally at the end of the file.
-1. How many processes do we start?
-1. How many records does each process insert?
+1.	What libraries did we import?
+1.	import datetime
+2.	import logging
+3.	import multiprocessing
+4.	import os
+5.	import platform
+6.	import sqlite3
+7.	import sys
+8.	import time
+2.	Where do we set the TASK_DURATION_SECONDS?
+1.	# Declare program constants (typically constants are named with ALL_CAPS)
+2.	
+3.	TASK_DURATION_SECONDS = 3 # TODO: increase this to 3 and see what happens
 
-In this first run, we start 3 processes, 
-each inserting 2 records into a shared database 
-(for a total of 6 records inserted.)
+3.	How many functions are defined?
+4.	What are the function names?
+5.	In general, what does each function do?
+1.	def recreate_database(): """Drop and recreate the database."""
+2.	def create_table():Create a table in the database.
+3.	def drop_table():"""Drop the table if it exists."""
+4.	def insert_pet(process, name, breed): """Insert a pet into pets table."""
+5.	def process_one(): Insert pets
+6.	def process_two(): Insert pets
+7.	def process_three(): Insert pets
+6.	Where does the execution begin? Hint: generally at the end of the file. 
+1.	if __name__ == "__main__":
+7.	How many processes do we start? 3
+8.	How many records does each process insert? 2
+In this first run, we start 3 processes, each inserting 2 records into a shared database (for a total of 6 records inserted.)
+In each case, the process gets a connection to the database, and a cursor to execute SQL statements. It inserts a record, and exits the database quickly.
+In general, we're successful and six new records get inserted.
+
 
 In each case, the process gets a connection to the database, 
 and a cursor to execute SQL statements.
