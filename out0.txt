@@ -5,3 +5,44 @@ This will clear the console output.
 Run the file once while the tasks are short. 
 
 Copy and paste the terminal results (when task_duration is 0) here.
+PS C:\Users\staylor\Documents\DataAnalytics\44671\Gits\streaming-02-multiple-processes> & C:/Users/staylor/AppDat
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                        & C:/Users/staylor/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/staylor/Documents/DataAnalytics/44671/Gits/streaming-02-multiple-processes/multiple_processes.py
+2023-09-05 19:51:09,713 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2023-09-05 at 07:51 PM
+  Operating System: nt Windows 10
+  Python Version:   3.11.5
+  Path to Interpreter:  C:\Users\staylor\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe
+======================================================================
+
+2023-09-05 19:51:09,715 - INFO - Called recreate_database().
+2023-09-05 19:51:09,715 - INFO - Called drop_table().
+2023-09-05 19:51:09,722 - INFO - Table 'pets' dropped successfully.
+2023-09-05 19:51:09,722 - INFO - Called create_table().
+2023-09-05 19:51:09,727 - INFO - Table 'pets' created successfully.
+2023-09-05 19:51:09,959 - INFO - Called process_one().
+2023-09-05 19:51:09,960 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2023-09-05 19:51:09,983 - INFO - Called process_two().
+2023-09-05 19:51:09,983 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2023-09-05 19:51:10,012 - INFO - Called process_three().
+2023-09-05 19:51:10,013 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2023-09-05 19:51:12,973 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2023-09-05 19:51:15,539 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2023-09-05 19:51:15,540 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2023-09-05 19:51:15,570 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2023-09-05 19:51:15,571 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+PS C:\Users\staylor\Documents\DataAnalytics\44671\Gits\streaming-02-multiple-processes> 
