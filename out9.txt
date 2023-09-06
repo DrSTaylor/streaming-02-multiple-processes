@@ -1,0 +1,37 @@
+PS C:\Users\staylor\Documents\DataAnalytics\44671\Gits\streaming-02-multiple-processes> & C:/Users/staylor/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/staylor/Documents/DataAnalytics/44671/Gits/streaming-02-multiple-processes/process_streaming_sarataylor.py
+2023-09-05 20:56:16,227 - INFO - ===============================================
+2023-09-05 20:56:16,227 - INFO - Starting fake streaming process.
+2023-09-05 20:56:16,228 - INFO - Starting to stream data from blood_sugar.csv to ('localhost', 9999).
+2023-09-05 20:56:16,228 - INFO - Opened for reading: blood_sugar.csv.
+2023-09-05 20:56:16,228 - INFO - Skipped header row: ['ï»¿Year', 'Month', 'Day', 'Time', 'Sugar']
+2023-09-05 20:56:16,232 - INFO - Sent: b'[2023, 1, 1, 15:18:50, 178]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:19,234 - INFO - Sent: b'[2023, 1, 2, 14:28:06, 142]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:22,236 - INFO - Sent: b'[2023, 1, 3, 09:25:12, 92]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:25,239 - INFO - Sent: b'[2023, 1, 4, 10:40:51, 158]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:28,240 - INFO - Sent: b'[2023, 1, 5, 05:15:10, 104]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:31,242 - INFO - Sent: b'[2023, 1, 6, 05:10:57, 96]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:34,243 - INFO - Sent: b'[2023, 1, 7, 05:17:49, 118]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:37,245 - INFO - Sent: b'[2023, 1, 8, 03:34:02, 75]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:40,247 - INFO - Sent: b'[2023, 1, 9, 20:39:43, 179]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:43,250 - INFO - Sent: b'[2023, 1, 10, 10:47:37, 138]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:46,252 - INFO - Sent: b'[2023, 1, 11, 21:16:38, 121]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:49,253 - INFO - Sent: b'[2023, 1, 12, 08:44:42, 134]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:52,256 - INFO - Sent: b'[2023, 1, 13, 13:40:09, 163]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:55,259 - INFO - Sent: b'[2023, 1, 14, 12:20:26, 83]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:56:58,262 - INFO - Sent: b'[2023, 1, 15, 19:16:46, 162]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:01,264 - INFO - Sent: b'[2023, 1, 16, 15:24:25, 112]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:04,266 - INFO - Sent: b'[2023, 1, 17, 11:33:29, 125]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:07,268 - INFO - Sent: b'[2023, 1, 18, 12:09:53, 82]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:10,271 - INFO - Sent: b'[2023, 1, 19, 23:32:17, 142]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:13,273 - INFO - Sent: b'[2023, 1, 20, 00:52:48, 124]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:16,276 - INFO - Sent: b'[2023, 1, 21, 19:26:24, 162]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:19,278 - INFO - Sent: b'[2023, 1, 22, 10:07:23, 124]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:22,281 - INFO - Sent: b'[2023, 1, 23, 14:33:24, 139]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:25,284 - INFO - Sent: b'[2023, 1, 24, 03:04:34, 119]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:28,284 - INFO - Sent: b'[2023, 1, 25, 21:25:41, 184]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:31,287 - INFO - Sent: b'[2023, 1, 26, 01:43:54, 82]' on port 9999. Hit CTRL-c to stop.
+2023-09-05 20:57:34,289 - INFO - Sent: b'[2023, 1, 27, 11:36:35, 119]' on port 9999. Hit CTRL-c to stop.
+Traceback (most recent call last):
+  File "c:\Users\staylor\Documents\DataAnalytics\44671\Gits\streaming-02-multiple-processes\process_streaming_sarataylor.py", line 97, in <module>
+    stream_row(INPUT_FILE_NAME, ADDRESS_TUPLE)
+  File "c:\Users\staylor\Documents\DataAnalytics\44671\Gits\streaming-02-multiple-processes\process_streaming_sarataylor.py", line 87, in stream_row
